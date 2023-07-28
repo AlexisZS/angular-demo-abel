@@ -1,0 +1,17 @@
+<h1>Consulta de Descuento</h1>
+<label for="identification">Número de placa:</label>
+<input type="text" [(ngModel)]="identification" id="identification" />
+
+<button (click)="fetchOffer()">Obtener Descuento</button>
+
+<div *ngIf="offer">
+  <br>
+  <label for="identificationField">Placa: </label>
+  <input type="text" [(ngModel)]="offer.identification" id="identificationField" disabled /><br>
+
+  <label for="discountField">Descuento: </label>
+  <input type="text" [(ngModel)]="offer.discount" id="discountField" disabled />
+</div>
+<div *ngIf="error">
+  <p>Error al obtener la oferta</p>
+</div>
