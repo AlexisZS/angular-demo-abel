@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class OfferService {
-  private apiUrl = 'http://localhost:8080/offer/';
+  private apiUrl = 'https://backend-production-bb3e.up.railway.app/discount/';
 
   constructor(private http: HttpClient) { }
 
