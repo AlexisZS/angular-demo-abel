@@ -6,8 +6,17 @@
 
 <div *ngIf="offer">
   <br>
-  <label for="identificationField">Placa: </label>
+  <label for="nameField">Nombre: </label>
+  <input type="text" [(ngModel)]="offer.name" id="nameField" disabled /><br>
+
+  <label for="lastnameField">Apellido: </label>
+  <input type="text" [(ngModel)]="offer.lastname" id="lastnameField" disabled /><br>
+
+  <label for="identificationField">DNI: </label>
   <input type="text" [(ngModel)]="offer.identification" id="identificationField" disabled /><br>
+
+  <label for="carLicensePlateField">PLACA: </label>
+  <input type="text" [(ngModel)]="offer.carLicensePlate" id="carLicensePlateField" disabled /><br>
 
   <label for="discountField">Descuento: </label>
   <input type="text" [(ngModel)]="offer.discount" id="discountField" disabled />
