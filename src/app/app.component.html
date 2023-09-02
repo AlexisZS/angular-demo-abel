@@ -1,5 +1,10 @@
 <h1>Consulta de Descuento</h1>
 <label for="identification">Número de placa:</label>
+<br>
+<label>Placas de ejemplo :</label><br>
+<label>AAA0001</label><br>
+<label>AAA0002</label><br>
+<br>
 <input type="text" [(ngModel)]="identification" id="identification" />
 
 <button (click)="fetchOffer()">Obtener Descuento</button>
@@ -15,7 +20,7 @@
   <label for="identificationField">DNI: </label>
   <input type="text" [(ngModel)]="offer.identification" id="identificationField" disabled /><br>
 
-  <label for="carLicensePlateField">PLACA: </label>
+  <label for="carLicensePlateField">Placa: </label>
   <input type="text" [(ngModel)]="offer.carLicensePlate" id="carLicensePlateField" disabled /><br>
 
   <label for="discountField">Descuento: </label>
